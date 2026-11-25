@@ -1,0 +1,7 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="none">
+  <!-- Pin shape -->
+  <path d="M32 2C20.954 2 12 10.954 12 22c0 13.25 17.333 36.667 18.333 38.083a2 2 0 0 0 3.334 0C34.667 58.667 52 35.25 52 22 52 10.954 43.046 2 32 2z" fill="#2563EB"/>
+  <circle cx="32" cy="22" r="8" fill="#FFFFFF"/>
+  <!-- Road line inside pin -->
+  <path d="M28 18h8v8h-8z" fill="#102B46"/>
+</svg>

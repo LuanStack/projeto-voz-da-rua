@@ -1,0 +1,79 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@theme {
+  --color-navy-950: #071729;
+  --color-navy-900: #0c2340;
+  --color-navy-800: #13345b;
+  --color-navy-700: #1b4678;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Ajustes de compatibilidade do Leaflet com Tailwind */
+.leaflet-container {
+  font-family: inherit;
+  background-color: #e2e8f0;
+  z-index: 1;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 0.875rem;
+  box-shadow: 0 12px 30px -6px rgba(12, 35, 64, 0.25);
+  padding: 0;
+  overflow: hidden;
+}
+
+.leaflet-popup-content {
+  margin: 0;
+  width: 260px !important;
+}
+
+.leaflet-popup-close-button {
+  color: #475569 !important;
+  top: 8px !important;
+  right: 8px !important;
+  width: 24px !important;
+  height: 24px !important;
+  border-radius: 9999px;
+  background: rgba(255, 255, 255, 0.9) !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px !important;
+  line-height: 1 !important;
+}
+
+.custom-div-marker {
+  background: transparent;
+  border: none;
+}
+
+/* Scrollbar sutil */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
